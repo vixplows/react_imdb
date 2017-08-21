@@ -1,6 +1,8 @@
 import React from 'react';
 
 import FilmList from '../components/FilmList.jsx';
+import SeeMoreFilms from '../components/SeeMoreFilms.jsx';
+import GetShowTimes from '../components/GetShowTimes';
 
 const filmData = [
   {id: 1, title: "Sausage Party", times: ["13:00", "15:00"]},
@@ -25,6 +27,8 @@ class FilmListContainer extends React.Component {
       <div>
         <h2>UK Opening This Week</h2>
         <FilmList data={this.state.data}/>
+        <SeeMoreFilms />
+        <GetShowTimes />
       </div>
       );
   }
