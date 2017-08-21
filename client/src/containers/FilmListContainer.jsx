@@ -23,7 +23,7 @@ class FilmListContainer extends React.Component {
   render() {
     return(
       <div>
-        UK Opening This Week
+        <h2>UK Opening This Week</h2>
         <FilmList data={this.state.data}/>
       </div>
       );
