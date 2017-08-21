@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import FilmListContainer from './containers/FilmListContainer.jsx';
+
 window.onload = function(){
   ReactDOM.render(
-    <h1> App Started </h1>,
-    document.getElementById('app')
+    <FilmListContainer />,
+    document.querySelector('#app')
   );
 }
