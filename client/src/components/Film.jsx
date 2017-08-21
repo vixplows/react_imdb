@@ -1,17 +1,17 @@
 import React from 'react';
 
 class Film extends React.Component {
+  constructor (props) {
+    super(props);
+  }
+
   render() {
     return (
-      <table>
-        <thead>
-          <tr>
-            <td>{this.props.title}</td>
-            {this.props.children}
-            <td>Showtimes</td>
-          </tr>
-        </thead>
-      </table>
+      <tr>
+        <td>{this.props.title}</td>
+        <td onClick={() => {console.log(this.props.times)}}>Showtimes</td>
+        <td id='times'>{this.props.times}</td>
+      </tr>
     );
   }
 }

@@ -8,17 +8,20 @@ class FilmList extends React.Component {
   }
 
   render() {
+
     var filmComponents = this.props.data.map(
       function(film) {
       return (
-        <Film key={film.id} title={film.title}></Film>
+        <Film key={film.id} title={film.title} times={film.times}></Film>
       );
     });
 
     return (
-      <div className='filmList'>
+      <table className='filmList'>
+        <tbody>
         {filmComponents}
-      </div>
+        </tbody>
+      </table>
     ); 
   }
 }
