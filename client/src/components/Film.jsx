@@ -9,8 +9,7 @@ class Film extends React.Component {
     return (
       <tr>
         <td>{this.props.title}</td>
-        <td onClick={() => {console.log(this.props.times)}}>Showtimes</td>
-        <td id='times'>{this.props.times}</td>
+        <td><a href={this.props.url}>Showtimes</a></td>
       </tr>
     );
   }

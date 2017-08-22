@@ -4,7 +4,7 @@ class GetShowTimes extends React.Component {
 
   render() {
     return (
-      <h1>Get Showtimes >> </h1>
+      <h1 id="show-times">Get Showtimes >> </h1>
     );
   }
 }
